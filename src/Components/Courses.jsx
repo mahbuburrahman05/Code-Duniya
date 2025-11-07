@@ -48,7 +48,7 @@ const Courses = () => {
   return (
     <Container>
       <div className='mt-[170px] text-center font-Anik'>
-        <h1 className='text-3xl mb-[15px]'>আমাদের কোর্স সমুহ</h1>
+        <h1 className='md:text-[36px] font-semibold text-2xl mb-[15px]'>আমাদের কোর্স সমুহ</h1>
         <p>আমাদের সমস্ত কোর্স সুদক্ষ মেন্টর দ্বারা পরিচালিত  এবং সমৃদ্ধ রিসোর্স দ্বারা পরিপূর্ণ</p>
       </div>
 

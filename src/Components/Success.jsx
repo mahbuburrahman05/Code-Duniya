@@ -108,7 +108,7 @@ function SamplePrevArrow(props) {
     <div>
         <Container>
         <div className=' text-center rounded-lg p-6 mt-10 font-Anik'>
-            <h2 className='text-2xl font-semibold mb-2'>কেন আমরাই সেরা!</h2>
+            <h2 className='md:text-[36px] text-2xl font-semibold mb-2'>কেন আমরাই সেরা!</h2>
             <p className=''>কেন আপনি আমাদের লার্নার হবেন</p>
         </div>
 

@@ -47,16 +47,18 @@ const Footer = () => {
 
             </Container>
             <div>
-                <hr className='border-gray-600' />
                 <div className="pb-6 text-center font-Anik text-white">
-                    <p>© 2024 CodeDuniya. All rights reserved.</p>
-                    <ul className='gap-8 mt-1 text-[26px] flex justify-center'>
+                    <img className='mx-auto w-[200px] mb-4' src="logo.png" alt="" />
+                    <p className='mb-4'>দেশের সর্ববৃহৎ আইটি ট্রেনিং প্লাটফর্ম.</p>
+                    <ul className='gap-8 mt-1 mb-2 text-[26px] flex justify-center'>
                         <li><FaTwitter /></li>
                         <li><FaFacebookF /></li>
                         <li><FaInstagram /></li>
                         <li><FaLinkedinIn /></li>
 
                     </ul>
+                    <hr className='border-gray-600' />
+                    <p className='mt-4'>Mahbubur Rahman| All rights reserved</p>
                 </div>
             </div>
         </div>
