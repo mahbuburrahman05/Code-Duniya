@@ -4,3 +4,13 @@
   --font-Anik: "Anek Bangla" , "sans-serif";
  
 }
+/* 👇 Adds horizontal gap only for mobile */
+@media (max-width: 767px) {
+  .slick-slide {
+    padding: 0 8px; /* adjust the gap here */
+  }
+
+  .slick-list {
+    margin: 0 -8px; /* keeps layout centered */
+  }
+}

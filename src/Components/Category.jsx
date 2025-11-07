@@ -22,14 +22,27 @@ const Category = () => {
     slidesToScroll: 1,
     autoplay: true,
      nextArrow: <SampleNextArrow />,
-    prevArrow: <SamplePrevArrow />
+    prevArrow: <SamplePrevArrow />,
+
+     responsive: [
+   
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          dots: false,
+          arrows: false,
+        }
+      }
+    ]
   };
 
   function SampleNextArrow(props) {
   const { onClick } = props;
   return (
     <div
-      className="absolute right-10 top-1/2 transform -translate-y-1/2 text-white bg-blue-600 p-2 rounded-full cursor-pointer hover:bg-blue-800"
+      className="absolute right-[-6px] top-1/2 transform -translate-y-1/2 text-white bg-blue-600 p-2 rounded-full cursor-pointer hover:bg-blue-800"
       onClick={onClick}
     >
       <FaArrowRight size={24} /> {/* control size here */}
@@ -41,7 +54,7 @@ function SamplePrevArrow(props) {
   const { onClick } = props;
   return (
     <div
-      className="absolute left-[-50px] top-1/2 transform -translate-y-1/2 text-white bg-blue-600 p-2 rounded-full cursor-pointer hover:bg-blue-800 z-10"
+      className="absolute left-[-30] top-1/2 transform -translate-y-1/2 text-white bg-blue-600 p-2 rounded-full cursor-pointer hover:bg-blue-800 z-10"
       onClick={onClick}
     >
       <FaArrowLeft size={24} />
@@ -77,10 +90,10 @@ function SamplePrevArrow(props) {
     },
   ]
   return (
-<section className=' absolute top-[-78px]  w-[80%] mx-20  rounded-lg shadow-lg'>
+<section className=' absolute top-[-78px]  w-[80%] md:mx-35 mx-0  rounded-lg shadow-lg'>
 
         <Container>
-          <Slider {...settings}>
+                <Slider {...settings}className='mx-[-40px] md:mx-0 '>
 
           {Items.map((Citem) => (
             <Category_Items item={Citem}/>

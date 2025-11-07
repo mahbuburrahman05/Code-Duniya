@@ -8,15 +8,15 @@ export default function Banner() {
         <section className='bg-[#0D1B2A] pb-[170px] pt-[81px]'>
             <div>
                 <Container>
-                    <Flexbox>
-                        <div className='w-2/4'>
-                            <h1 className='text-[50px] font-bold text-white max-w-[435px]'>দেশের সর্ব বৃহৎ
+                    <Flexbox className="md:flex-row flex-col items-center gap-10">
+                        <div className='md:w-2/4 w-full'>
+                            <h1 className='md:text-[50px] text-3xl font-bold text-white max-w-[435px]'>দেশের সর্ব বৃহৎ
                                 আইটি ট্রেনিং প্লাটফর্ম </h1>
                                 <p className='text-white max-w-[457px] mt-6'>আইটি ট্রেনিং এর মাধ্যমে নিজেকে স্বাবলম্বী করুন। নিজেকে 
 আইটি এক্সপার্ট হিসেবে গড়ে তুলুন</p>
-                        <button className='bg-[#415A77] px-[58px] rounded-[10px] py-2 mt-8 text-white cursor-'>কোর্স দেখুন</button>
+                        <button className='bg-[#415A77] px-[30px] md:px-[58px] text-[14px] md:text-[18px] rounded-[10px] py-2 mt-3 md:mt-8 text-white cursor-pointer'>কোর্স দেখুন</button>
                         </div>
-                        <div className='w-2/4'>
+                        <div className='md:w-2/4 w-full  md:mt-0'>
                             <img className='' src={BannerImage} alt="" />
                         </div>
                     </Flexbox>
